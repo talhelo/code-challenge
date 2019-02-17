@@ -32,7 +32,7 @@ namespace Common.Providers.HTTP
     ///client.PostData = "{postData: value}";
     ///var json = client.MakeRequest();
     /// </summary>
-    public class HttpProvider
+    internal class HttpProvider
     {
         private const int AsyncRequestTimeout = 20000;
 
