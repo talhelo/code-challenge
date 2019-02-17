@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Common.Constants;
+﻿using Common.Constants;
 using Common.Helpers;
 using System;
 using System.Collections.Generic;
