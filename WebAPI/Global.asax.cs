@@ -12,6 +12,8 @@ namespace WebAPI
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(FilterConfig.RegisterGlobalFilters);
+            MapperConfig.Register();
         }
     }
 }

@@ -18,7 +18,7 @@ namespace WebAPI.Filters
             }
         }
 
-        private void Log()
+        private void Log(Exception exception)
         {
             // TODO log here
         }

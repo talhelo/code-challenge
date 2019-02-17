@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Common.Entities
+namespace WebAPI.Models
 {
-    public class BaseQueryParams
+    public class RequestQueryParams
     {
+        public string q { get; set; }
         public int index { get; set; }
         public int size { get; set; }
     }
