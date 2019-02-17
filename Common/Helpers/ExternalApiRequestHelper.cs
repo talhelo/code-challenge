@@ -11,19 +11,36 @@ namespace Common.Helpers
 {
     public class ExternalApiRequestHelper : IExternalApiRequestHelper
     {
+        public string Get(string url, string query = "")
+        {
+            try
+            {
+                var client = LoadHttpProvider(url, HttpVerb.GET);
+                string response = client.MakeRequest(query);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public IList<T> Get<T>(string url, string query = "")
         {
             try
             {
                 var client = LoadHttpProvider(url, HttpVerb.GET);
                 string response = client.MakeRequest(query);
+
+                if (string.IsNullOrEmpty(response))
+                    return null;
+
                 var result = JsonConvert.DeserializeObject<T[]>(response);
                 return result;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw ex;
             }
         }
 

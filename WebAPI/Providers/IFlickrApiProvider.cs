@@ -8,6 +8,6 @@ namespace WebAPI.Providers
 {
     public interface IFlickrApiProvider
     {
-        IList<FlickrResponse> Find(string keyword);
+        IList<FlickrResponse> Find(string keyword, bool refresh, bool jsonResponse);
     }
 }

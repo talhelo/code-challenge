@@ -8,6 +8,7 @@ namespace Common.Helpers
 {
     public interface IExternalApiRequestHelper
     {
+        string Get(string url, string query = "");
         IList<T> Get<T>(string url, string query = "");
     }
 }

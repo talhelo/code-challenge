@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,9 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\MessageConstant.cs" />
     <Compile Include="Enums\HttpVerb.cs" />
+    <Compile Include="Helpers\CustomExtensionsHelper.cs" />
+    <Compile Include="Helpers\DataHelper.cs" />
     <Compile Include="Helpers\ExternalApiRequestHelper.cs" />
     <Compile Include="Helpers\IExternalApiRequestHelper.cs" />
+    <Compile Include="Helpers\MemoryCacheHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\HttpProvider.cs" />
   </ItemGroup>

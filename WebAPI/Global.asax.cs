@@ -13,7 +13,6 @@ namespace WebAPI
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             GlobalConfiguration.Configure(FilterConfig.RegisterGlobalFilters);
-            MapperConfig.Register();
         }
     }
 }

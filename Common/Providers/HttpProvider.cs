@@ -1,4 +1,5 @@
 ﻿using Common.Enums;
+using Common.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -143,7 +144,8 @@ namespace Common.Providers.HTTP
             }
             catch (Exception ex)
             {
-                throw ex;
+                // TODO log here
+                return string.Empty;
             }
         }
 
@@ -168,7 +170,8 @@ namespace Common.Providers.HTTP
             }
             catch (Exception ex)
             {
-                throw ex;
+                // TODO log here
+                return string.Empty;
             }
         }
 
@@ -198,8 +201,9 @@ namespace Common.Providers.HTTP
             }
 
             // set headers
-            foreach (var item in Headers)
-                request.Headers.Add(item.Key, item.Value);
+            if (Headers.NotNullOrEmpty())
+                foreach (var item in Headers)
+                    request.Headers.Add(item.Key, item.Value);
 
 
             if (!string.IsNullOrEmpty(PostData) && Method == HttpVerb.POST)
