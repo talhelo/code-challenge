@@ -6,6 +6,9 @@ namespace Common.Helpers
     {
         public static string RemoveSpecialCharacters(this string str)
         {
+            if (string.IsNullOrEmpty(str))
+                return string.Empty;
+
             StringBuilder sb = new StringBuilder();
             foreach (char c in str)
             {
