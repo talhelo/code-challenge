@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckDayCodeChallenge", "LuckDayCodeChallenge\LuckDayCodeChallenge.csproj", "{8E4174C7-9DE3-4293-BE5D-9E36DCCCED24}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{622162AD-DA25-4DF2-ACEB-E359979645D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{9D290B7E-05EF-49A6-93D6-92235DD1761C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8E4174C7-9DE3-4293-BE5D-9E36DCCCED24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E4174C7-9DE3-4293-BE5D-9E36DCCCED24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E4174C7-9DE3-4293-BE5D-9E36DCCCED24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E4174C7-9DE3-4293-BE5D-9E36DCCCED24}.Release|Any CPU.Build.0 = Release|Any CPU
 		{622162AD-DA25-4DF2-ACEB-E359979645D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{622162AD-DA25-4DF2-ACEB-E359979645D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{622162AD-DA25-4DF2-ACEB-E359979645D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{622162AD-DA25-4DF2-ACEB-E359979645D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D290B7E-05EF-49A6-93D6-92235DD1761C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D290B7E-05EF-49A6-93D6-92235DD1761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D290B7E-05EF-49A6-93D6-92235DD1761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D290B7E-05EF-49A6-93D6-92235DD1761C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
